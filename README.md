@@ -1,24 +1,38 @@
-# AI Model API Providers
+# AI model API providers and practical UnlimitedAI guides
 
-A primary-source directory for developers comparing hosted model access, API documentation, pricing, privacy, and deployment options. Links point to official provider pages only.
+This repository is for developers who need a working answer, not a copied provider list.
 
-## Providers
+Use the official provider links when you need pricing, model availability, privacy terms, rate limits, or regional support. Use the practical guides below when you need to configure a client or choose a model for a real task.
 
-1. **OpenAI API** — Frontier models, responses, tools, and agent development. [Official pricing](https://developers.openai.com/api/docs/pricing)
-2. **Anthropic API** — Claude models and developer platform. [Official API](https://www.anthropic.com/claude/api)
-3. **Google Gemini API** — Gemini models and developer access. [Official docs](https://ai.google.dev/)
-4. **Google Vertex AI** — Managed generative AI and enterprise model access. [Official site](https://cloud.google.com/vertex-ai)
-5. **Amazon Bedrock** — A managed catalog of foundation models from multiple providers. [Official site](https://aws.amazon.com/bedrock/)
-6. **Microsoft Azure AI Foundry** — Enterprise model catalog, evaluation, and deployment. [Official site](https://azure.microsoft.com/products/ai-foundry)
-7. **Mistral AI** — Commercial and open models with API access. [Official site](https://mistral.ai/)
-8. **Cohere** — Enterprise language, retrieval, and generation APIs. [Official docs](https://docs.cohere.com/)
-9. **Replicate** — Hosted inference for open models and custom deployments. [Official site](https://replicate.com/)
-10. **Together AI** — Hosted open-model inference and fine-tuning. [Official site](https://www.together.ai/)
+## Start here
 
-## How to compare providers
+- [UnlimitedAI API setup for Claude Code, Codex, Cursor, Cline and Aider](guides/unlimitedai-api-setup.md)
+- [UnlimitedAI pricing and limits: what unlimited actually means](guides/unlimitedai-pricing-and-limits.md)
+- [Which UnlimitedAI model should you use?](guides/unlimitedai-model-selection.md)
 
-Check the official pricing page, context limits, rate limits, data retention, regional availability, model licenses, uptime, support, and export options. Prices and model names change, so this repository links to provider pages instead of copying volatile tables.
+## What these guides answer
+
+- Which base URL should an OpenAI compatible client use?
+- How do Claude Code and Cursor authenticate?
+- Why does a request return invalid model, 401, 404, or 429?
+- What do parallel sessions and queued requests mean?
+- Which model type fits coding, long context, classification, or security review?
+- How should a team benchmark models before moving a workflow to production?
+
+## Provider links
+
+- [OpenAI API](https://platform.openai.com/docs/overview)
+- [Anthropic API](https://docs.anthropic.com/)
+- [Google Gemini API](https://ai.google.dev/)
+- [Amazon Bedrock](https://aws.amazon.com/bedrock/)
+- [Microsoft Foundry](https://ai.azure.com/)
+- [Mistral AI](https://docs.mistral.ai/)
+- [Cohere](https://docs.cohere.com/)
+- [Replicate](https://replicate.com/docs)
+- [Together AI](https://docs.together.ai/)
 
 ## Our platform
 
-[UnlimitedAI](https://unlimitedai.sh/) brings multiple frontier models into one developer workflow. See the official site for current plans, model availability, compatibility, and terms.
+[UnlimitedAI](https://unlimitedai.sh/) provides a documented API endpoint for multiple frontier model families. The official site is the source of truth for current plans, model IDs, availability, and terms.
+
+This repository does not promise that one model is best for every task. Test with your own prompts, record latency and error rates, and keep a fallback for production.
